@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Digimon World</title>
+	<style type="text/css">
+		.thum{height: 200px; opacity: 0.7}
+		.thum:hover{opacity: 0.7}
+
+		#food{position: absolute; left: 33%; top: 5%; 
+			width: 150px; height: auto;}
+		#agu{position: absolute; left: 23%; top: 30%;
+			width: 200px; height: auto;}
+		#tele{position: absolute; left: 32%; top: 60%;
+			width: 200px; height: auto;}
+		#egg{position: absolute; left: 45%; top: 30%;
+			width: 200px; height: auto;}
+		#w{position: absolute; left: 55%; top: 60%;
+			width: 250px; height: auto;}
+		#j{position: absolute; left: 65%; top: 30%;
+			width: 200px; height: auto;}
+		#ty{position: absolute; left: 55%; top: 3%;
+			width: 200px; height: auto;}
+
+		#bg{width: auto; height: 1000px;
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			  position: relative;}
+
+		
+		.tit{color: white;position: absolute; font-size: 50px; font-family: 'Lucida Console'; color: yellow; top: 170px; left: 430px;}
+		.cli{color: white;position: absolute; font-size: 15px; font-family: 'Lucida Console'; color: red; top: 500px; left: 720px;}
+
+	
+	</style>
+</head>
+
+
+<body background="g.jpg" id="bg">
+	<p class="tit">Welcome to Digimon World!</p>
+	<p class="cli">CLICK ME FIRST</p>
+
+
+	<img src="food.gif" class="thum" id="food">
+	<audio src="eating.mp3" loop id="fs"></audio>
+
+	<img src="agu.gif" class="thum" id="agu">
+	<audio src="walk.mp3" loop id="as"></audio>
+
+	<img src="phone.gif" class="thum" id="tele">
+	<audio src="tele.mp3" loop id="ts"></audio>
+
+	<img src="egg.gif" class="thum" id="egg">
+	<audio src="Bolero.mp3" loop id="es"></audio>
+
+	<img src="w.gif" class="thum" id="w">
+	<audio src="whistle.mp3" loop id="ws"></audio>
+
+	<img src="j.gif" class="thum" id="j">
+	<audio src="jump.mp3" loop id="js"></audio>
+
+	<img src="ty.gif" class="thum" id="ty">
+	<audio src="typing.mp3" loop id="tys"></audio>
+
+	<script type="text/javascript">
+
+	var foodstate = "off";
+		food.onclick = function(){
+			if(foodstate == "off"){
+				fs.play();
+				food.style.opacity="1";
+				foodstate = "on";
+				food.style.width = "200px"
+			}else{
+				fs.pause();
+				food.style.opacity="0.7";
+				foodstate = "off";	
+				food.style.width = "150px"
+			}
+		}
+
+	var agustate = "off";
+		agu.onclick = function(){
+			if(agustate == "off"){
+				as.play();
+				agu.style.opacity="1";
+				agustate = "on";
+				agu.style.width = "250px"
+	
+			}else{
+				as.pause();
+				agu.style.opacity="0.7";
+				agustate = "off";
+				agu.style.width = "200px"	
+			}
+		}
+
+
+	var telestate = "off";
+		tele.onclick = function(){
+			if(telestate == "off"){
+				ts.play();
+				tele.style.opacity="1";
+				telestate = "on";
+				tele.style.width = "250px"
+			}else{
+				ts.pause();
+				tele.style.opacity="0.7";
+				telestate = "off";	
+				tele.style.width = "200px"
+			}
+		}
+
+		var eggstate = "off";
+		egg.onclick = function(){
+			if(eggstate == "off"){
+				es.play();
+				egg.style.opacity="1";
+				eggstate = "on";
+				egg.style.left = "630px";
+				egg.style.top = "260px";
+				egg.style.width = "300px"
+			}else{
+				es.pause();
+				egg.style.opacity="0.7";
+				eggstate = "off";
+				egg.style.left = "682px";
+				egg.style.top = "300px";
+				egg.style.width = "200px"	
+			}
+		}
+
+
+		var wstate = "off";
+		w.onclick = function(){
+			if(wstate == "off"){
+				ws.play();
+				w.style.opacity="1";
+				wstate = "on";
+				w.style.width = "300px"
+			}else{
+				ws.pause();
+				w.style.opacity="0.7";
+				wstate = "off";
+				w.style.width = "200px"
+
+
+
+			}
+		}
+
+
+		var jstate = "off";
+		j.onclick = function(){
+			if(jstate == "off"){
+				js.play();
+				jstate = "on";
+				j.style.opacity="1";
+				j.style.width = "250px"	
+			}else{
+				js.pause();
+				j.style.opacity="0.7";
+				jstate = "off";
+				j.style.width = "200px"
+
+					
+			}
+		}
+
+		var tystate = "off";
+		ty.onclick = function(){
+			if(tystate == "off"){
+				tys.play();
+				ty.style.top = "5px";
+				ty.style.opacity="1";
+				tystate = "on";
+				ty.style.width = "230px"
+			}else{
+				tys.pause();
+				ty.style.top = "20px";
+				ty.style.opacity="0.7";
+				tystate = "off";
+				ty.style.width = "200px"
+
+			}
+		}
+
+
+	</script>
+</body>
+</html>
